@@ -1,7 +1,7 @@
 const checkLicensePlateInHanoi = (licensePlate) => {
     const arr= ['29','30','31','32','33','40'];
     for (const value of arr) {
-        if (licensePlate.includes(value)){
+        if (licensePlate.startsWith(value)){
             return true
         }
     }
